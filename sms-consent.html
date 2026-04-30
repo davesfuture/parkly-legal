@@ -4,72 +4,118 @@
   <meta charset="UTF-8">
   <title>Parkly SMS Consent</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: #f6f7f9;
+      margin: 0;
+      padding: 0;
+      color: #1a1a1a;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin-top: 30px;
+      font-size: 18px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 6px;
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: 15px;
+    }
+
+    ul, ol {
+      line-height: 1.6;
+      font-size: 15px;
+    }
+
+    .notice {
+      background: #f0f7ff;
+      padding: 15px;
+      border-left: 4px solid #2b7cff;
+      border-radius: 6px;
+      margin: 20px 0;
+      font-style: italic;
+    }
+
+    .footer-note {
+      margin-top: 30px;
+      font-size: 13px;
+      color: #666;
+    }
+  </style>
 </head>
 
-<body style="font-family: Arial, sans-serif; max-width: 750px; margin: 40px auto; line-height: 1.6; color: #222;">
+<body>
 
-<h1>SMS Opt-In & Consent – Parkly</h1>
+<div class="container">
 
-<p>
-Parkly provides SMS messaging to allow customers to request their valet-parked vehicle and receive service-related updates.
-</p>
+  <h1>Parkly SMS Consent</h1>
 
-<p>
-Customers opt in by providing their phone number directly to a valet attendant at the time of service. Consent is obtained before any messages are sent.
-</p>
+  <p>
+    Parkly provides SMS messaging to enable valet customers to request their vehicle and receive service-related updates.
+  </p>
 
-<hr>
+  <p>
+    Customers opt in by providing their phone number directly to a valet attendant at the time of service. Consent is required before any messages are sent.
+  </p>
 
-<h2>Opt-in disclosure shown to customers</h2>
+  <div class="notice">
+    “By providing your phone number, you agree to receive text messages related to your valet service from Parkly. Msg & data rates may apply. Reply STOP to opt out.”
+  </div>
 
-<p><em>
-“By providing your phone number, you agree to receive text messages related to your valet service from Parkly. Msg & data rates may apply. Reply STOP to opt out.”
-</em></p>
+  <h2>Use of SMS</h2>
+  <ul>
+    <li>Vehicle retrieval requests</li>
+    <li>Valet service updates</li>
+    <li>No marketing or promotional messages</li>
+  </ul>
 
-<hr>
+  <h2>Message Frequency</h2>
+  <p>Messages are only sent during an active valet session.</p>
 
-<h2>Use of SMS messages</h2>
-<ul>
-  <li>Vehicle retrieval requests and valet service updates only</li>
-  <li>No marketing or promotional messages are sent</li>
-</ul>
+  <h2>Data Collected</h2>
+  <ul>
+    <li>Phone number</li>
+    <li>Name (if provided)</li>
+    <li>Date and time of opt-in</li>
+    <li>Service location</li>
+  </ul>
 
-<hr>
+  <h2>Opt-Out</h2>
+  <p>Reply <strong>STOP</strong> at any time to unsubscribe.</p>
 
-<h2>Message frequency</h2>
-<p>Messages are only sent during an active valet session.</p>
+  <h2>Help</h2>
+  <p>Reply <strong>HELP</strong> or contact support@parkly.com</p>
 
-<hr>
+  <h2>How It Works</h2>
+  <ol>
+    <li>Customer provides phone number to valet attendant</li>
+    <li>Customer is informed about SMS usage and agrees to receive messages</li>
+    <li>Customer receives texts to request their vehicle</li>
+  </ol>
 
-<h2>Data collected</h2>
-<ul>
-  <li>Phone number</li>
-  <li>Name (if provided)</li>
-  <li>Date and time of opt-in</li>
-  <li>Service location</li>
-</ul>
+  <div class="footer-note">
+    This page documents SMS opt-in consent for Parkly valet services.
+  </div>
 
-<hr>
-
-<h2>Opt-out instructions</h2>
-<p>Reply <strong>STOP</strong> at any time to unsubscribe from messages.</p>
-
-<hr>
-
-<h2>Help</h2>
-<p>
-Reply <strong>HELP</strong> for assistance or contact: <br>
-support@theparkly.com
-</p>
-
-<hr>
-
-<h2>How opt-in works</h2>
-<ol>
-  <li>Customer provides phone number to valet attendant</li>
-  <li>Customer is informed they will receive SMS messages for valet service</li>
-  <li>Messages are sent only for vehicle retrieval requests</li>
-</ol>
+</div>
 
 </body>
 </html>
