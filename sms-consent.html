@@ -4,124 +4,42 @@
   <meta charset="UTF-8">
   <title>Parkly SMS Consent</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-      background: #f6f7f9;
-      margin: 0;
-      padding: 0;
-      color: #1a1a1a;
-    }
-
-    .container {
-      max-width: 800px;
-      margin: 40px auto;
-      background: #ffffff;
-      padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-    }
-
-    h1 {
-      font-size: 28px;
-      margin-bottom: 10px;
-    }
-
-    h2 {
-      margin-top: 30px;
-      font-size: 18px;
-      border-bottom: 1px solid #eee;
-      padding-bottom: 6px;
-    }
-
-    p {
-      line-height: 1.6;
-      font-size: 15px;
-    }
-
-    ul, ol {
-      line-height: 1.6;
-      font-size: 15px;
-    }
-
-    .notice {
-      background: #f0f7ff;
-      padding: 15px;
-      border-left: 4px solid #2b7cff;
-      border-radius: 6px;
-      margin: 20px 0;
-      font-style: italic;
-    }
-
-    .footer-note {
-      margin-top: 30px;
-      font-size: 13px;
-      color: #666;
-    }
+    body { font-family: Arial, sans-serif; background: #f6f7f9; margin: 0; padding: 0; color: #1a1a1a; }
+    .container { max-width: 800px; margin: 40px auto; background: #fff; padding: 40px; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.08); }
+    h1 { font-size: 28px; margin-bottom: 10px; }
+    h2 { margin-top: 30px; font-size: 18px; border-bottom: 1px solid #eee; padding-bottom: 6px; }
+    p { line-height: 1.6; font-size: 15px; }
+    .notice { background: #f0f7ff; padding: 15px; border-left: 4px solid #2b7cff; border-radius: 6px; margin: 20px 0; font-style: italic; }
+    .conversation { background: #f9f9f9; padding: 20px; border-radius: 8px; margin: 20px 0; }
+    .conversation p { margin: 8px 0; }
   </style>
 </head>
-
 <body>
-
 <div class="container">
+  <h1>Parkly SMS Consent Policy</h1>
+  <p>Parkly is a valet ticketing app used by valet attendants to manage vehicle check-ins and customer notifications. Customers receive transactional SMS messages only.</p>
 
-  <h1>Parkly SMS Consent</h1>
-
-  <p>
-    Parkly provides SMS messaging to enable valet customers to request their vehicle and receive service-related updates.
-  </p>
-
-  <p>
-    Customers opt in by providing their phone number directly to a valet attendant at the time of service. Consent is required before any messages are sent.
-  </p>
-
+  <h2>Verbal Consent Script</h2>
+  <p>Valet attendants use the following exact script when collecting customer phone numbers:</p>
   <div class="notice">
-    “By providing your phone number, you agree to receive text messages related to your valet service from Parkly. Msg & data rates may apply. Reply STOP to opt out.”
+    "To help you retrieve your vehicle, may we send you a text message from Parkly at this number? You will receive one message when your car is checked in and can reply READY when you are ready to leave. Message and data rates may apply. You will receive one message per visit. Reply STOP at any time to opt out."
   </div>
+
+  <h2>Simulated Consent Conversation</h2>
+  <div class="conversation">
+    <p><strong>Attendant:</strong> "May I have your phone number? Parkly will send you a one-time text confirmation for your valet ticket. Message and data rates may apply. Reply STOP to opt out."</p>
+    <p><strong>Customer:</strong> "Sure, it's 215-555-1234."</p>
+    <p><strong>Attendant:</strong> [Enters phone number into Parkly app and submits check-in]</p>
+    <p><strong>System:</strong> Customer receives SMS: "Parkly: Your valet ticket is P-001. Vehicle: Toyota Camry. Reply READY when you'd like your car. Reply STOP to opt out."</p>
+  </div>
+
+  <h2>How Consent Is Recorded</h2>
+  <p>When the valet attendant submits the check-in form in the Parkly app, the system logs the date, time, phone number, and ticket number. The act of submission confirms that the attendant obtained verbal consent from the customer before entering their information.</p>
+
+  <h2>Message Frequency</h2>
+  <p>Customers receive one message per valet visit confirming their check-in. Additional messages are only sent if the customer replies READY to request their vehicle.</p>
 
   <h2>Use of SMS</h2>
   <ul>
-    <li>Vehicle retrieval requests</li>
-    <li>Valet service updates</li>
-    <li>No marketing or promotional messages</li>
-  </ul>
-
-  <h2>Message Frequency</h2>
-  <p>Messages are only sent during an active valet session.</p>
-
-  <h2>Data Collected</h2>
-  <ul>
-    <li>Phone number</li>
-    <li>Name (if provided)</li>
-    <li>Date and time of opt-in</li>
-    <li>Service location</li>
-  </ul>
-
-  <h2>Opt-Out</h2>
-  <p>Reply <strong>STOP</strong> at any time to unsubscribe.</p>
-
-  <h2>Help</h2>
-  <p>Reply <strong>HELP</strong> or contact support@theparkly.com</p>
-  <h2>Verbal Consent Script</h2>
-  <p>Valet attendants use the following script when collecting customer phone numbers:</p>
-  <blockquote>
-    <p>"May I have your phone number? You will receive a text message confirming your vehicle check-in and instructions to request your car when you are ready to leave. Message and data rates may apply. Reply STOP at any time to opt out."</p>
-  </blockquote>
-  <p>The customer verbally agrees before their number is entered into the Parkly system.</p>
-  
-  <h2>How It Works</h2>
-  <ol>
-    <li>Customer provides phone number to valet attendant</li>
-    <li>Customer is informed about SMS usage and agrees to receive messages</li>
-    <li>Customer receives texts to request their vehicle</li>
-  </ol>
-
-  <div class="footer-note">
-    This page documents SMS opt-in consent for Parkly valet services.
-  </div>
-
-</div>
-
-</body>
-</html>
+    <li>Vehicle check-in confirmation</li>
